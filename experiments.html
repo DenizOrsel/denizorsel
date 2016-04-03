@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Future Path</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile 1st -->
+    	    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<style>
+		body {background-color: #1E1F1D;color: #878778;}
+		h1, h3 {color: #cc3300;}
+		.container {padding: 35px 35px;}
+		.arrow li {display: block;}
+		.arrow li:before {content: "\e080";font-family: 'Glyphicons Halflings';font-size: 9px;position: relative;margin-right: 5px;top: -1px;color: #ccc;}
+		</style>
+    </head>
+<body>
+	<div class="container text-left" id="home">
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="navbar-brand" href="#">The Lab</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#home">HOME</a></li>
+		        <li><a href="experiments.html">EXPERIMENTS</a></li>
+		        <li><a href="#contact">CONTACT</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	    <div class="row">
+	    	<div class="col-12-xs">
+	    Experiments
+			</div>
+		</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function(){$(".navbar a, footer a[href='#myPage']").on('click', function(event) {event.preventDefault();var hash = this.hash;
+		  $('html, body').animate({scrollTop: $(hash).offset().top}, 900, function(){window.location.hash = hash;});});})
+		</script>
+</body>
+</html>
