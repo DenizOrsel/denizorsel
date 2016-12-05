@@ -1,5 +1,5 @@
   body {
-      font: 400 15px Lato, sans-serif;
+      font-family:Calibri, sans-serif;
       line-height: 1.8;
       color: #818181;
   }
@@ -19,6 +19,10 @@
   }  
   .jumbotron {
       background-color: #00A651;
+      background-image: url("../media/banner.png");
+      background-repeat: no-repeat;        
+      background-size:contain;
+      background-position:left;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
